@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(CheckCVer VERSION 0.1)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(source_file main.cpp)
+add_executable(${PROJECT_NAME} ${source_file})
+target_compile_features(CheckCVer PRIVATE cxx_std_17) 
